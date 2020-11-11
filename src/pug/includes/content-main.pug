@@ -49,7 +49,7 @@
                         |рядом с метро в Москве и МО:
 
 .medcenters.container
-    h1.block-title Медосмотры работников в Москве и МО
+    h2.block-title Медосмотры работников в Москве и МО
 
     ul.medcenters__list
         li
@@ -299,3 +299,183 @@
 
     .allcenters-link
         a(href="#") Все медицинские центры
+
+.analyzes.container
+    h2.block-title Обследования и анализы при медосмотре 302н
+
+    ul.analyzes-list
+        li
+            a(href="#") ЭКГ
+        li
+            a(href="#") Флюорография или рентгенографию органов грудной полости
+        li
+            a(href="#") ОАК и ОАМ
+        li
+            a(href="#") Биохимия крови на сахар и хостерин
+        li
+            a(href="#") Кровь на сифилис
+        li
+            a(href="#") Анализ на кишечные инфекции и возбудители брюшного тифа
+        li
+            a(href="#") Кал на гельминты
+        li
+            a(href="#") Анализ мочи
+        li
+            a(href="#") Мазок из носа и зева
+
+.specialists.container
+    h2.block-title Состав медкомиссии при профосмотре 302н
+
+    ul.specialist-list
+        li
+            .specialist-list__icon
+                img(src="img/spec-list.png" width="106" height="106")
+            .specialist-list__article Терапевт
+        li
+            .specialist-list__icon
+                img(src="img/spec-list.png" width="106" height="106")
+            .specialist-list__article Нарколог
+        li
+            .specialist-list__icon
+                img(src="img/spec-list.png" width="106" height="106")
+            .specialist-list__article Психиатр
+        li
+            .specialist-list__icon
+                img(src="img/spec-list.png" width="106" height="106")
+            .specialist-list__article Невролог
+        li
+            .specialist-list__icon
+                img(src="img/spec-list.png" width="106" height="106")
+            .specialist-list__article Гинеколог (для женщин)
+
+.typesblock.container
+    h2.block-title Виды медосмотров
+
+    .types-gallery.swiper-container
+        .swiper-wrapper
+            .swiper-slide 
+                .types-gallery__item
+                    .types-gallery__title 1. Предварительный<br> медосмотр
+                    .types-gallery__article Требуется при устройстве на работу по определенным специальностям
+                    button(type="button").btn Отправить заявку
+
+            .swiper-slide 
+                .types-gallery__item
+                    .types-gallery__title 2. Периодический<br> медосмотр
+                    .types-gallery__article Проводится дважды в год, позволяет выявить профессиональные заболевания
+                    button(type="button").btn Отправить заявку
+
+            .swiper-slide 
+                .types-gallery__item
+                    .types-gallery__title 3. Внеочередной<br> медицинский осмотр
+                    .types-gallery__article Проводится по инициативе работодателя, как правило, необходим в период эпидемий
+                    button(type="button").btn Отправить заявку
+
+            .swiper-slide 
+                .types-gallery__item
+                    .types-gallery__title 4. Предрейсовые<br> осмотры
+                    .types-gallery__article Перед рейсом измеряется температура, артериальное давление и пульс.
+                    button(type="button").btn Отправить заявку
+
+        .swiper-pagination
+
+        .swiper-button-next
+        .swiper-button-prev
+
+.services.container
+    h2.block-title Услуги и цены
+
+    table.servicetable
+        thead
+            tr
+                th 
+                    span Вид медицинского осмотра
+                th 
+                    span № приказа
+                th 
+                    span Цена, руб.
+                th 
+                    span Онлайн запись
+        tbody
+            tr
+                td
+                    a(href="#").servicetable__link Медицинские осмотры (предварительные, периодические) без оформления личной медицинской книжки
+                td
+                    span 302Н
+                td
+                    .servicetable__hidden Цена, руб.
+                    span от 1 000 руб. за 1 чел.
+                td
+                    .servicetable__btnblock
+                        button(type="button").btn Отправить заявку
+
+            tr
+                td
+                    a(href="#").servicetable__link Медицинские осмотры (предварительные, периодические) с оформлением личной медицинской книжки
+                td
+                    span 302Н
+                td
+                    .servicetable__hidden Цена, руб.
+                    span от 2 000 руб. за 1 чел.
+                td
+                    .servicetable__btnblock
+                        button(type="button").btn Отправить заявку
+
+            tr
+                td
+                    a(href="#").servicetable__link Предрейсовые медицинские осмотры на территории клиники
+                td
+                    span 302Н
+                td
+                    .servicetable__hidden Цена, руб.
+                    span 150 руб. / день
+                td
+                    .servicetable__btnblock
+                        button(type="button").btn Отправить заявку
+
+.conttxt-block.container
+    h2.block-title Проведение медицинских осмотров работников
+    .cont-text
+        p В наших медицинских центрах проводятся медосмотры работников любой специальности. Частные лица могут приехать на медкомиссию в любой филиал в Москве и области в удобное время. Мы работаем без выходных, принимаем всех, независимо от прописки. Для юридических лиц мы организовываем обследования работников в наших клиниках или на территории заказчика (выездной профосмотр). Работаем по Москве и Московской области.
+
+.form-block.container
+    .form-block__column
+        .form-block__img
+            img(src="img/doc-ph.png" width="538" height="488")
+
+    .form-block__column
+        form.formloan(action="#")
+            .formloan__title Онлайн заявка на профосмотр:
+            .formloan__columns
+                .formloan__column
+                    .formloan__item
+                        label.formloan__label
+                            .formloan__sub-title Кол-во сотрудников:
+                            .selectcustom
+                                select
+                                    option 10 чел.
+                                    option 15 чел.
+                                    option 20 чел.
+
+                        label.formloan__label
+                            .formloan__sub-title Имя
+                            input(type="text" placeholder="Ваше имя").inp 
+
+                        label.formloan__label
+                            .formloan__sub-title Телефон
+                            input(type="text" placeholder="+7 ___ ___-__-__").inp 
+
+                    textarea.textarea(placeholder="Комментрарий")
+
+                .formloan__column
+                    .formloan__btnblock
+                        button(type="submit").btn.formloan__btn Оформить заявку
+
+                    .checkblock.formloan__checkblock
+                        input(type="checkbox").check#check
+                        label(for="check").checklabel
+                            a(href="#") Я принимаю условия передачи информации
+
+
+
+
