@@ -30,4 +30,9 @@ $(document).ready(function () {
     });
 
     $('.selectcustom select').selectric();
+
+    $('.burger').click(function () {
+        $(this).toggleClass('is-active');
+        $('.dropdown').toggleClass('is-active');
+    });
 });
